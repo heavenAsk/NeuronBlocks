@@ -126,8 +126,6 @@ def split_data():
 
 
 
-
-
 ### 3.2 嵌入层
 嵌入层主要是将文本分词后，利用词表查找功能转化为相应的词向量，为后续模型的输入做准备。该层中以**Embedding**定义，**conf**设置词向量参数，本案例中我们使用搜狗新闻预训练得到的词向量，所以**dim**应与保持预训练的维度保持一致设为300，**cols**输入文本分别为前提（premise）和假设（hypothesis）。
 ```
@@ -139,7 +137,8 @@ def split_data():
         "dim": 300
       }
     }
-}```
+}
+```
 
 ### 3.3 BiGRU编码层
 利用双向GRU对向量化后的premise和hypothesis进行编码，获得更高层的语义信息表示。
@@ -186,7 +185,6 @@ def split_data():
     "layer": "premise_bigru",
     "inputs": ["hypothesis_dropout"]
 },
-
 ```
 
 
