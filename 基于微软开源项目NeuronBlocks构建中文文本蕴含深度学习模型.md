@@ -86,7 +86,7 @@ def split_data():
 
 1. Clone本项目： 
     ```bash
-    git clone https://github.com/Microsoft/NeuronBlocks
+    git clone https://github.com/heavenAsk/NeuronBlocks
     ```
 
 2. 安装Python依赖包：
