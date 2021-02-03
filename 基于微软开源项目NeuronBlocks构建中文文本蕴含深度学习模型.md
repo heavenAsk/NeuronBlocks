@@ -141,7 +141,7 @@ def split_data():
     }
 }```
 
-### 3.2 BiGRU编码层
+### 3.3 BiGRU编码层
 利用双向GRU对向量化后的premise和hypothesis进行编码，获得更高层的语义信息表示。
 
 ```
@@ -191,7 +191,7 @@ def split_data():
 
 
 
-### 3.3 交互层
+### 3.4 交互层
 利用BiAttFlow注意力方法使premise和hypothesis进行交互，得到premise和hypothesis信息相互感知的上下文表征。
 
 ```
@@ -214,7 +214,7 @@ def split_data():
 
 
 
-### 3.4 融合层
+### 3.5 融合层
 
 利用BiGRU对交互后premise和hypothesis再次编码，使两者信息融合得更加充分。
 
@@ -240,7 +240,7 @@ def split_data():
 
 ```
 
-### 3.5 组合、输出层
+### 3.6 组合、输出层
 
 ```
 # premise 和 hypothesis 最大化池化操作，得到对应的句子向量
@@ -303,7 +303,7 @@ def split_data():
 
 ```
 
-### 3.6 模型其他参数设置
+### 3.7 模型其他参数设置
 到此我们将模型结构用Json参数的形式构建完成，这里来设置模型的其他一些重要参数
 
 ```
@@ -373,8 +373,3 @@ def split_data():
    - 本案例中除了刚开始的数据划分用到了python代码，整个模型训练、测试流程没有写一行代码，可见Neuronblocks的强大之处
    - 本案例完整版已上传至github，[项目地址](https://github.com/heavenAsk/NeuronBlocks)
     
-
-
-```python
-
-```
