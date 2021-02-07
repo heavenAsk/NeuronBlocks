@@ -394,13 +394,33 @@ BiGRU对交互后premise和hypothesis再次编码，使两者信息融合得更�
     - 进入**PROJECTROOT**目录下
     - 命令行运行命令：python train.py --conf_path=model_zoo/nlp_tasks/chinese_nli/conf_chinese_nli_bigru_biAttnflow.json 
     - 或者指定GPU：CUDA_VISIBLE_DEVICES=1 python train.py --conf_path=model_zoo/nlp_tasks/chinese_nli/conf_chinese_nli_bigru_biAttnflow.json
-    
+
+4. 训练模型日志部分展示：
+
+```
+2021-02-07 22:31:30,923 INFO LearningMachine.py train 314: Epoch 1 batch idx: 1100; lr: 0.200000; since last log, loss=0.910134; accuracy: 0.564219
+2021-02-07 22:31:57,580 INFO LearningMachine.py train 314: Epoch 1 batch idx: 1200; lr: 0.200000; since last log, loss=0.901286; accuracy: 0.565391
+2021-02-07 22:32:24,299 INFO LearningMachine.py train 314: Epoch 1 batch idx: 1300; lr: 0.200000; since last log, loss=0.901213; accuracy: 0.565781
+2021-02-07 22:32:50,993 INFO LearningMachine.py train 314: Epoch 1 batch idx: 1400; lr: 0.200000; since last log, loss=0.888821; accuracy: 0.578906
+2021-02-07 22:33:18,819 INFO LearningMachine.py train 314: Epoch 1 batch idx: 1500; lr: 0.200000; since last log, loss=0.895172; accuracy: 0.576328
+2021-02-07 22:33:45,966 INFO LearningMachine.py train 314: Epoch 1 batch idx: 1600; lr: 0.200000; since last log, loss=0.885136; accuracy: 0.576875
+2021-02-07 22:34:11,992 INFO LearningMachine.py train 314: Epoch 1 batch idx: 1700; lr: 0.200000; since last log, loss=0.884841; accuracy: 0.577969
+2021-02-07 22:34:39,648 INFO LearningMachine.py train 314: Epoch 1 batch idx: 1800; lr: 0.200000; since last log, loss=0.890709; accuracy: 0.577969
+2021-02-07 22:35:03,630 INFO LearningMachine.py train 314: Epoch 1 batch idx: 1900; lr: 0.200000; since last log, loss=0.875404; accuracy: 0.589375
+2021-02-07 22:35:18,388 INFO LearningMachine.py train 322: Valid & Test : Epoch 1
+2021-02-07 22:35:18,391 INFO LearningMachine.py evaluate 408: Starting valid ...
+2021-02-07 22:35:18,391 INFO corpus_utils.py get_batches 237: Start making batches
+2021-02-07 22:35:20,321 INFO corpus_utils.py get_batches 398: Batches got!
+2021-02-07 22:36:33,065 INFO LearningMachine.py evaluate 619: Epoch 1, valid accuracy: 0.591011 loss: 0.873733
+```
+
 
 ## 5.5 模型测试
 模型测试更简单
    - 进入**PROJECTROOT**目录下
    - 运行命令：CUDA_VISIBLE_DEVICES=1 python test.py --conf_path=model_zoo/nlp_tasks/chinese_nli/conf_chinese_nli_bigru_biAttnflow.json
-    
+  
+![](images/model_training.png)  
 
 # 6. 总结
    * 本案例中除了刚开始的数据划分用到了python代码，整个模型训练、测试流程没有写一行代码，可见Neuronblocks的强大之处
