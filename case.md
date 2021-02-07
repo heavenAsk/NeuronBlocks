@@ -420,7 +420,6 @@ BiGRU对交互后premise和hypothesis再次编码，使两者信息融合得更�
    - 进入**PROJECTROOT**目录下
    - 运行命令：CUDA_VISIBLE_DEVICES=1 python test.py --conf_path=model_zoo/nlp_tasks/chinese_nli/conf_chinese_nli_bigru_biAttnflow.json
   
-![](images/model_training.png)  
 
 # 6. 总结
    * 本案例中除了刚开始的数据划分用到了python代码，整个模型训练、测试流程没有写一行代码，可见Neuronblocks的强大之处
