@@ -423,7 +423,7 @@ BiGRU对交互后premise和hypothesis再次编码，使两者信息融合得更�
 # 6. 课后练习
    * 对双向注意力**BIDAF**的原理熟练掌握
    * 超参数对于模型的最终性能非常关键，请为本案例设计出最优的超参数。如调整学习率、批次大小、训练轮数、dropout等，并分析其重要性
-   * 思考案例采用模型的优点和不足，可从模型的运行效率和性能方面简要分析。
+   * 思考案例采用模型的优点和不足，可从模型的运行效率和性能方面简要分析
 
 # 7. 总结
    * 本案例中除了刚开始的数据划分用到了python代码，整个模型训练、测试流程没有写一行代码，可见Neuronblocks的强大之处
@@ -435,10 +435,18 @@ BiGRU对交互后premise和hypothesis再次编码，使两者信息融合得更�
 最近，在自然语言处理（NLP）领域中，使用语言模型预训练方法在多项 NLP任务（情感分析、文本蕴含、机器阅读理解等）都取得了突破性的提升，广泛受到了各界的关注。如BERT（Bidirectional Encoder Representations from Transformer）一个基于 Transformer 实现的双向编码器来提取输入序列特征信息的预训练模型，一经问世就横扫11项NLP任务。除了BERT，常见的预训练模型还有GPT、RoBERTa、XLNet等，这些预训练模型首先在大规模语料上进行无监督训练，学习得到通用的语言表征，之后在具体的下游nlp任务进行微调即可，所以也可以采用预训练模型来构建中文文本蕴含深度学习模型
 
 ## 8.2 参考资料
-	* 1. [文本蕴含有关研究简介](https://www.jiqizhixin.com/articles/2016-12-06-2)
-	* 2. [NeuronBlocks: Building Your NLP DNN Models Like Playing Lego](https://www.aclweb.org/anthology/D19-3028/)
-	* 3. [Bidirectional Attention Flow for Machine Comprehension](https://arxiv.org/abs/1611.01603)
-	* 4. [自然语言处理中的语言模型预训练方法](https://www.jiqizhixin.com/articles/2018-10-22-3)
-	* 5. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
+1. [文本蕴含有关研究简介](https://www.jiqizhixin.com/articles/2016-12-06-2)
+
+
+2. [NeuronBlocks: Building Your NLP DNN Models Like Playing Lego](https://www.aclweb.org/anthology/D19-3028/)
+
+
+3. [Bidirectional Attention Flow for Machine Comprehension](https://arxiv.org/abs/1611.01603)
+
+
+4. [自然语言处理中的语言模型预训练方法](https://www.jiqizhixin.com/articles/2018-10-22-3)
+
+
+5. [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
 
     
